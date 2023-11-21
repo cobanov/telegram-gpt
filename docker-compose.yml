@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  instagram_downloader:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - "./downloads:/usr/src/app/downloads"
+    environment:
+      - NAME=World
